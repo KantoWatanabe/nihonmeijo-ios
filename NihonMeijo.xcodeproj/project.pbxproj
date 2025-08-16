@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B79B3F502E5056D80085BCFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B79B3F3A2E5056D70085BCFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B79B3F412E5056D70085BCFA;
+			remoteInfo = NihonMeijo;
+		};
+		B79B3F5A2E5056D80085BCFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B79B3F3A2E5056D70085BCFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B79B3F412E5056D70085BCFA;
+			remoteInfo = NihonMeijo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B79B3F422E5056D70085BCFA /* NihonMeijo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NihonMeijo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79B3F4F2E5056D80085BCFA /* NihonMeijoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NihonMeijoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79B3F592E5056D80085BCFA /* NihonMeijoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NihonMeijoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B79B403B2E505BA00085BCFA /* Exceptions for "NihonMeijo" folder in "NihonMeijo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B79B3F412E5056D70085BCFA /* NihonMeijo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B79B3F442E5056D70085BCFA /* NihonMeijo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B79B403B2E505BA00085BCFA /* Exceptions for "NihonMeijo" folder in "NihonMeijo" target */,
+			);
+			path = NihonMeijo;
+			sourceTree = "<group>";
+		};
+		B79B3F522E5056D80085BCFA /* NihonMeijoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NihonMeijoTests;
+			sourceTree = "<group>";
+		};
+		B79B3F5C2E5056D80085BCFA /* NihonMeijoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NihonMeijoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B79B3F3F2E5056D70085BCFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79B3F4C2E5056D80085BCFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79B3F562E5056D80085BCFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B79B3F392E5056D70085BCFA = {
+			isa = PBXGroup;
+			children = (
+				B79B3F442E5056D70085BCFA /* NihonMeijo */,
+				B79B3F522E5056D80085BCFA /* NihonMeijoTests */,
+				B79B3F5C2E5056D80085BCFA /* NihonMeijoUITests */,
+				B79B3F432E5056D70085BCFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B79B3F432E5056D70085BCFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B79B3F422E5056D70085BCFA /* NihonMeijo.app */,
+				B79B3F4F2E5056D80085BCFA /* NihonMeijoTests.xctest */,
+				B79B3F592E5056D80085BCFA /* NihonMeijoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B79B3F412E5056D70085BCFA /* NihonMeijo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79B3F632E5056D80085BCFA /* Build configuration list for PBXNativeTarget "NihonMeijo" */;
+			buildPhases = (
+				B79B3F3E2E5056D70085BCFA /* Sources */,
+				B79B3F3F2E5056D70085BCFA /* Frameworks */,
+				B79B3F402E5056D70085BCFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B79B3F442E5056D70085BCFA /* NihonMeijo */,
+			);
+			name = NihonMeijo;
+			packageProductDependencies = (
+			);
+			productName = NihonMeijo;
+			productReference = B79B3F422E5056D70085BCFA /* NihonMeijo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B79B3F4E2E5056D80085BCFA /* NihonMeijoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79B3F662E5056D80085BCFA /* Build configuration list for PBXNativeTarget "NihonMeijoTests" */;
+			buildPhases = (
+				B79B3F4B2E5056D80085BCFA /* Sources */,
+				B79B3F4C2E5056D80085BCFA /* Frameworks */,
+				B79B3F4D2E5056D80085BCFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B79B3F512E5056D80085BCFA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B79B3F522E5056D80085BCFA /* NihonMeijoTests */,
+			);
+			name = NihonMeijoTests;
+			packageProductDependencies = (
+			);
+			productName = NihonMeijoTests;
+			productReference = B79B3F4F2E5056D80085BCFA /* NihonMeijoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B79B3F582E5056D80085BCFA /* NihonMeijoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79B3F692E5056D80085BCFA /* Build configuration list for PBXNativeTarget "NihonMeijoUITests" */;
+			buildPhases = (
+				B79B3F552E5056D80085BCFA /* Sources */,
+				B79B3F562E5056D80085BCFA /* Frameworks */,
+				B79B3F572E5056D80085BCFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B79B3F5B2E5056D80085BCFA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B79B3F5C2E5056D80085BCFA /* NihonMeijoUITests */,
+			);
+			name = NihonMeijoUITests;
+			packageProductDependencies = (
+			);
+			productName = NihonMeijoUITests;
+			productReference = B79B3F592E5056D80085BCFA /* NihonMeijoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B79B3F3A2E5056D70085BCFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					B79B3F412E5056D70085BCFA = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					B79B3F4E2E5056D80085BCFA = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = B79B3F412E5056D70085BCFA;
+					};
+					B79B3F582E5056D80085BCFA = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = B79B3F412E5056D70085BCFA;
+					};
+				};
+			};
+			buildConfigurationList = B79B3F3D2E5056D70085BCFA /* Build configuration list for PBXProject "NihonMeijo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B79B3F392E5056D70085BCFA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B79B3F432E5056D70085BCFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B79B3F412E5056D70085BCFA /* NihonMeijo */,
+				B79B3F4E2E5056D80085BCFA /* NihonMeijoTests */,
+				B79B3F582E5056D80085BCFA /* NihonMeijoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B79B3F402E5056D70085BCFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79B3F4D2E5056D80085BCFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79B3F572E5056D80085BCFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B79B3F3E2E5056D70085BCFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79B3F4B2E5056D80085BCFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79B3F552E5056D80085BCFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B79B3F512E5056D80085BCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B79B3F412E5056D70085BCFA /* NihonMeijo */;
+			targetProxy = B79B3F502E5056D80085BCFA /* PBXContainerItemProxy */;
+		};
+		B79B3F5B2E5056D80085BCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B79B3F412E5056D70085BCFA /* NihonMeijo */;
+			targetProxy = B79B3F5A2E5056D80085BCFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B79B3F612E5056D80085BCFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C763MAG2BQ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B79B3F622E5056D80085BCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C763MAG2BQ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B79B3F642E5056D80085BCFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C763MAG2BQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NihonMeijo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "日本名城";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kantowatanabe.nihonmeijo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = NihonMeijo_Dev_2025;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B79B3F652E5056D80085BCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C763MAG2BQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NihonMeijo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "日本名城";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kantowatanabe.nihonmeijo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = NihonMeijo_Dev_2025;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B79B3F672E5056D80085BCFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C763MAG2BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kantowatanabe.nihonmeijo.NihonMeijoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NihonMeijo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NihonMeijo";
+			};
+			name = Debug;
+		};
+		B79B3F682E5056D80085BCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C763MAG2BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kantowatanabe.nihonmeijo.NihonMeijoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NihonMeijo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NihonMeijo";
+			};
+			name = Release;
+		};
+		B79B3F6A2E5056D80085BCFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C763MAG2BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kantowatanabe.nihonmeijo.NihonMeijoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NihonMeijo;
+			};
+			name = Debug;
+		};
+		B79B3F6B2E5056D80085BCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C763MAG2BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kantowatanabe.nihonmeijo.NihonMeijoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NihonMeijo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B79B3F3D2E5056D70085BCFA /* Build configuration list for PBXProject "NihonMeijo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79B3F612E5056D80085BCFA /* Debug */,
+				B79B3F622E5056D80085BCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B79B3F632E5056D80085BCFA /* Build configuration list for PBXNativeTarget "NihonMeijo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79B3F642E5056D80085BCFA /* Debug */,
+				B79B3F652E5056D80085BCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B79B3F662E5056D80085BCFA /* Build configuration list for PBXNativeTarget "NihonMeijoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79B3F672E5056D80085BCFA /* Debug */,
+				B79B3F682E5056D80085BCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B79B3F692E5056D80085BCFA /* Build configuration list for PBXNativeTarget "NihonMeijoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79B3F6A2E5056D80085BCFA /* Debug */,
+				B79B3F6B2E5056D80085BCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B79B3F3A2E5056D70085BCFA /* Project object */;
+}
