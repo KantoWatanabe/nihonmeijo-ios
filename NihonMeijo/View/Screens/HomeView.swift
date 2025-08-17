@@ -17,7 +17,7 @@ struct HomeView: View {
             LazyVGrid(columns: columns, spacing: 16) {
                 ForEach(viewModel.collections) { item in
                     CastleCollectionCell(props: CastleCollectionCellProps(item: item, onTap: {
-                        
+                        nav.push(.castleList(item))
                     }))
                 }
             }

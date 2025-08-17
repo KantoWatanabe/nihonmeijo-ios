@@ -8,6 +8,7 @@ import SwiftUI
 enum AppRoute: Hashable {
     case home
     case help
+    case castleList(CastleCollectionModel)
 }
 
 extension AppRoute {
@@ -18,6 +19,8 @@ extension AppRoute {
             HomeView()
         case .help:
             HelpView()
+        case .castleList(let collection):
+            CastleListView(collection: collection)
         }
     }
 }
