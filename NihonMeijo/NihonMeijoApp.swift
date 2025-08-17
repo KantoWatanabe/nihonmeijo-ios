@@ -9,7 +9,7 @@ import SwiftUI
 struct NihonMeijoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

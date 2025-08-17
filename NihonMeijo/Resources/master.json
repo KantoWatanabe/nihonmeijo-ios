@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "castles": [],
+  "collections": [
+    {"id":"nihon100","title":"日本100名城", "iconName": "Collection100"},
+    {"id":"zoku100","title":"続日本100名城", "iconName": "CollectionZoku100"},
+    {"id":"genzontenshu","title":"現存天守", "iconName": "CollectionGenzon"},
+    {"id":"all","title":"すべて", "iconName": "CollectionAll"}
+  ]
+}
