@@ -1,11 +1,11 @@
 //
-//  CastleCollectionModel.swift
+//  CollectionModel.swift
 //  NihonMeijo
 //
 
 import Foundation
 
-struct CastleCollectionModel: Codable, Identifiable, Hashable {
+struct CollectionModel: Codable, Identifiable, Hashable {
     let id: String
     let title: String
     let iconName: String

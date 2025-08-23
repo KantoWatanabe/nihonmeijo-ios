@@ -6,33 +6,52 @@
 import SwiftUI
 
 struct CastleListView: View {
-    let collection: CastleCollectionModel
-
-    var body: some View {
-        CastleGridView()
-            .navigationTitle(collection.title)
-    }
-}
-
-struct CastleGridView: View {
-    let items: [CastleCellProps] = [
-        .init(title: "姫路城", onTap: { print("姫路城 tapped") }),
-        .init(title: "大阪城", onTap: { print("大阪城 tapped") }),
-        .init(title: "松本城", onTap: { print("松本城 tapped") })
-    ]
+    let collection: CollectionModel
+    @Environment(MainViewModel.self) private var mainVM
+    @State private var vm: CastleListViewModel
     
     private let columns = [GridItem(.flexible(), spacing: 12),
                            GridItem(.flexible(), spacing: 12)]
     
+    init(collection: CollectionModel) {
+        self.collection = collection
+        _vm = State(initialValue: CastleListViewModel(collection: collection))
+    }
+    
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns, spacing: 12) {
-                ForEach(items) { item in
-                    CastleCell(props: item)
+            if vm.castles.isEmpty {
+                ContentUnavailableView {
+                    Label("お城が見つかりません", image: "Castle")
+                }
+                    .padding(.top, 32)
+            } else {
+                LazyVGrid(columns: columns, spacing: 12) {
+                    ForEach(vm.castles) { item in
+                        CastleCell(props: CastleCellProps(item: item, onTap: {}))
+                    }
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 16)
+            }
+        }
+        .navigationTitle(collection.title)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink(value: AppRoute.help) {
+                    Image(systemName: "questionmark.circle")
                 }
             }
-            .padding(16)
         }
-        .navigationTitle("城一覧")
+        .task {
+            await mainVM.runAsync {
+                vm.load()
+            }
+        }
+        .refreshable {
+            await mainVM.runAsync {
+                vm.load()
+            }
+        }
     }
 }

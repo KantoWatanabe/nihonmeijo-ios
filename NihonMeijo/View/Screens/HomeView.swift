@@ -7,7 +7,8 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var nav: Navigator
-    @StateObject private var viewModel = HomeViewModel()
+    @Environment(MainViewModel.self) private var mainVM
+    @State private var vm = HomeViewModel()
     
     let columns = [GridItem(.flexible(), spacing: 16),
                    GridItem(.flexible(), spacing: 16)]
@@ -15,7 +16,7 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 16) {
-                ForEach(viewModel.collections) { item in
+                ForEach(vm.collections) { item in
                     CastleCollectionCell(props: CastleCollectionCellProps(item: item, onTap: {
                         nav.push(.castleList(item))
                     }))
@@ -29,6 +30,17 @@ struct HomeView: View {
                 NavigationLink(value: AppRoute.help) {
                     Image(systemName: "questionmark.circle")
                 }
+            }
+        }
+        .task {
+            await mainVM.runAsync {
+                try mainVM.syncIfNeededOnce()
+                vm.load()
+            }
+        }
+        .refreshable {
+            await mainVM.runAsync {
+                vm.load()
             }
         }
     }

@@ -5,9 +5,8 @@
 
 import SwiftUI
 
-struct CastleCellProps: Identifiable {
-    let id = UUID()
-    let title: String
+struct CastleCellProps {
+    let item: CastleModel
     let onTap: () -> Void
 }
 
@@ -32,7 +31,7 @@ struct CastleCell: View {
     }
     
     private var title: some View {
-        Text(props.title)
+        Text(props.item.nameJa)
             .font(.headline)
             .foregroundColor(.white)
             .lineLimit(1)

@@ -1,10 +1,2843 @@
 {
-  "version": 1,
-  "castles": [],
-  "collections": [
-    {"id":"nihon100","title":"日本100名城", "iconName": "Collection100"},
-    {"id":"zoku100","title":"続日本100名城", "iconName": "CollectionZoku100"},
-    {"id":"genzontenshu","title":"現存天守", "iconName": "CollectionGenzon"},
-    {"id":"all","title":"すべて", "iconName": "CollectionAll"}
-  ]
+    "version": 1,
+    "castles": [
+        {
+            "id": "nihon100-001",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "根室半島チャシ跡群",
+            "nameKana": "ねむろはんとうちゃしあとぐん",
+            "address": "北海道根室市",
+            "prefecture": "北海道",
+            "lat": 43.338,
+            "lon": 145.5825,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-002",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "五稜郭",
+            "nameKana": "ごりょうかく",
+            "address": "北海道函館市五稜郭町44",
+            "prefecture": "北海道",
+            "lat": 41.794,
+            "lon": 140.7569,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-003",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "松前城",
+            "nameKana": "まつまえじょう",
+            "address": "北海道松前郡松前町字松城",
+            "prefecture": "北海道",
+            "lat": 41.4309,
+            "lon": 140.1067,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-004",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "弘前城",
+            "nameKana": "ひろさきじょう",
+            "address": "青森県弘前市下白銀町1",
+            "prefecture": "青森県",
+            "lat": 40.6063,
+            "lon": 140.4637,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-005",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "根城",
+            "nameKana": "ねじょう",
+            "address": "青森県八戸市根城",
+            "prefecture": "青森県",
+            "lat": 40.5064,
+            "lon": 141.4885,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-006",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "盛岡城",
+            "nameKana": "もりおかじょう",
+            "address": "岩手県盛岡市内丸1丁目",
+            "prefecture": "岩手県",
+            "lat": 39.701,
+            "lon": 141.1543,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-007",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "多賀城",
+            "nameKana": "たがじょう",
+            "address": "宮城県多賀城市市川城前",
+            "prefecture": "宮城県",
+            "lat": 38.2957,
+            "lon": 140.9796,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-008",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "仙台城",
+            "nameKana": "せんだいじょう",
+            "address": "宮城県仙台市青葉区川内1",
+            "prefecture": "宮城県",
+            "lat": 38.2546,
+            "lon": 140.851,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-009",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "久保田城",
+            "nameKana": "くぼたじょう",
+            "address": "秋田県秋田市千秋公園",
+            "prefecture": "秋田県",
+            "lat": 39.7199,
+            "lon": 140.1247,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-010",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "山形城",
+            "nameKana": "やまがたじょう",
+            "address": "山形県山形市霞城町",
+            "prefecture": "山形県",
+            "lat": 38.2526,
+            "lon": 140.3337,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-011",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "二本松城",
+            "nameKana": "にほんまつじょう",
+            "address": "福島県二本松市郭内",
+            "prefecture": "福島県",
+            "lat": 37.5865,
+            "lon": 140.43,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-012",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "会津若松城（鶴ヶ城）",
+            "nameKana": "あいづわかまつじょう（つるがじょう）",
+            "address": "福島県会津若松市追手町1-1",
+            "prefecture": "福島県",
+            "lat": 37.4871,
+            "lon": 139.9292,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-013",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "白河小峰城",
+            "nameKana": "しらかわこみねじょう",
+            "address": "福島県白河市郭内",
+            "prefecture": "福島県",
+            "lat": 37.1266,
+            "lon": 140.2119,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-014",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "水戸城",
+            "nameKana": "みとじょう",
+            "address": "茨城県水戸市三の丸",
+            "prefecture": "茨城県",
+            "lat": 36.3745,
+            "lon": 140.4774,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-015",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "足利氏館",
+            "nameKana": "あしかがしやかた",
+            "address": "栃木県足利市家富町",
+            "prefecture": "栃木県",
+            "lat": 36.3381,
+            "lon": 139.4492,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-016",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "箕輪城",
+            "nameKana": "みのわじょう",
+            "address": "群馬県高崎市箕郷町",
+            "prefecture": "群馬県",
+            "lat": 36.3987,
+            "lon": 138.9921,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-017",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "金山城",
+            "nameKana": "かなやまじょう",
+            "address": "群馬県太田市金山町",
+            "prefecture": "群馬県",
+            "lat": 36.3117,
+            "lon": 139.3789,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-018",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "鉢形城",
+            "nameKana": "はちがたじょう",
+            "address": "埼玉県大里郡寄居町鉢形",
+            "prefecture": "埼玉県",
+            "lat": 36.1183,
+            "lon": 139.1956,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-019",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "川越城",
+            "nameKana": "かわごえじょう",
+            "address": "埼玉県川越市郭町",
+            "prefecture": "埼玉県",
+            "lat": 35.925,
+            "lon": 139.4851,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-020",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "佐倉城",
+            "nameKana": "さくらじょう",
+            "address": "千葉県佐倉市城内町",
+            "prefecture": "千葉県",
+            "lat": 35.7237,
+            "lon": 140.2255,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-021",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "江戸城",
+            "nameKana": "えどじょう",
+            "address": "東京都千代田区千代田",
+            "prefecture": "東京都",
+            "lat": 35.6852,
+            "lon": 139.7528,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-022",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "八王子城",
+            "nameKana": "はちおうじじょう",
+            "address": "東京都八王子市元八王子町",
+            "prefecture": "東京都",
+            "lat": 35.6623,
+            "lon": 139.281,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-023",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "小田原城",
+            "nameKana": "おだわらじょう",
+            "address": "神奈川県小田原市城内",
+            "prefecture": "神奈川県",
+            "lat": 35.2494,
+            "lon": 139.1555,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-024",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "武田氏館",
+            "nameKana": "たけだしやかた",
+            "address": "山梨県甲府市古府中町",
+            "prefecture": "山梨県",
+            "lat": 35.687,
+            "lon": 138.5684,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-025",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "甲府城",
+            "nameKana": "こうふじょう",
+            "address": "山梨県甲府市丸の内",
+            "prefecture": "山梨県",
+            "lat": 35.6664,
+            "lon": 138.5686,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-026",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "松代城",
+            "nameKana": "まつしろじょう",
+            "address": "長野県長野市松代町",
+            "prefecture": "長野県",
+            "lat": 36.5394,
+            "lon": 138.1375,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-027",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "上田城",
+            "nameKana": "うえだじょう",
+            "address": "長野県上田市二の丸",
+            "prefecture": "長野県",
+            "lat": 36.4028,
+            "lon": 138.2496,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-028",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "小諸城",
+            "nameKana": "こもろじょう",
+            "address": "長野県小諸市丁",
+            "prefecture": "長野県",
+            "lat": 36.3271,
+            "lon": 138.4241,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-029",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "松本城",
+            "nameKana": "まつもとじょう",
+            "address": "長野県松本市丸の内",
+            "prefecture": "長野県",
+            "lat": 36.2381,
+            "lon": 137.9689,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-030",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "高遠城",
+            "nameKana": "たかとおじょう",
+            "address": "長野県伊那市高遠町",
+            "prefecture": "長野県",
+            "lat": 35.8328,
+            "lon": 138.0528,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-031",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "新発田城",
+            "nameKana": "しばたじょう",
+            "address": "新潟県新発田市大手町",
+            "prefecture": "新潟県",
+            "lat": 37.9513,
+            "lon": 139.3272,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-032",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "春日山城",
+            "nameKana": "かすがやまじょう",
+            "address": "新潟県上越市中屋敷",
+            "prefecture": "新潟県",
+            "lat": 37.1546,
+            "lon": 138.236,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-033",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "高岡城",
+            "nameKana": "たかおかじょう",
+            "address": "富山県高岡市古城",
+            "prefecture": "富山県",
+            "lat": 36.7522,
+            "lon": 137.0189,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-034",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "七尾城",
+            "nameKana": "ななおじょう",
+            "address": "石川県七尾市古城町",
+            "prefecture": "石川県",
+            "lat": 37.0389,
+            "lon": 136.9589,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-035",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "金沢城",
+            "nameKana": "かなざわじょう",
+            "address": "石川県金沢市丸の内",
+            "prefecture": "石川県",
+            "lat": 36.5611,
+            "lon": 136.6563,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-036",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "丸岡城",
+            "nameKana": "まるおかじょう",
+            "address": "福井県坂井市丸岡町霞町",
+            "prefecture": "福井県",
+            "lat": 36.1529,
+            "lon": 136.2727,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-037",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "一乗谷城",
+            "nameKana": "いちじょうだにじょう",
+            "address": "福井県福井市城戸ノ内町",
+            "prefecture": "福井県",
+            "lat": 36.0184,
+            "lon": 136.3053,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-038",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "岩村城",
+            "nameKana": "いわむらじょう",
+            "address": "岐阜県恵那市岩村町",
+            "prefecture": "岐阜県",
+            "lat": 35.3611,
+            "lon": 137.4337,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-039",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "岐阜城",
+            "nameKana": "ぎふじょう",
+            "address": "岐阜県岐阜市金華山天守閣",
+            "prefecture": "岐阜県",
+            "lat": 35.4336,
+            "lon": 136.7835,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-040",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "山中城",
+            "nameKana": "やまなかじょう",
+            "address": "静岡県三島市山中新田",
+            "prefecture": "静岡県",
+            "lat": 35.1881,
+            "lon": 138.9705,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-041",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "駿府城",
+            "nameKana": "すんぷじょう",
+            "address": "静岡県静岡市葵区駿府城公園",
+            "prefecture": "静岡県",
+            "lat": 34.9769,
+            "lon": 138.3833,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-042",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "掛川城",
+            "nameKana": "かけがわじょう",
+            "address": "静岡県掛川市掛川",
+            "prefecture": "静岡県",
+            "lat": 34.7706,
+            "lon": 138.0152,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-043",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "犬山城",
+            "nameKana": "いぬやまじょう",
+            "address": "愛知県犬山市犬山北古券",
+            "prefecture": "愛知県",
+            "lat": 35.3886,
+            "lon": 136.9392,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-044",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "名古屋城",
+            "nameKana": "なごやじょう",
+            "address": "愛知県名古屋市中区本丸",
+            "prefecture": "愛知県",
+            "lat": 35.185,
+            "lon": 136.899,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-045",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "岡崎城",
+            "nameKana": "おかざきじょう",
+            "address": "愛知県岡崎市康生町",
+            "prefecture": "愛知県",
+            "lat": 34.9542,
+            "lon": 137.1621,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-046",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "長篠城",
+            "nameKana": "ながしのじょう",
+            "address": "愛知県新城市長篠",
+            "prefecture": "愛知県",
+            "lat": 34.9001,
+            "lon": 137.5531,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-047",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "伊賀上野城",
+            "nameKana": "いがうえのじょう",
+            "address": "三重県伊賀市上野丸之内",
+            "prefecture": "三重県",
+            "lat": 34.768,
+            "lon": 136.1319,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-048",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "松阪城",
+            "nameKana": "まつさかじょう",
+            "address": "三重県松阪市殿町",
+            "prefecture": "三重県",
+            "lat": 34.5761,
+            "lon": 136.5275,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-049",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "小谷城",
+            "nameKana": "おだにじょう",
+            "address": "滋賀県長浜市湖北町伊部",
+            "prefecture": "滋賀県",
+            "lat": 35.4547,
+            "lon": 136.2314,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-050",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "彦根城",
+            "nameKana": "ひこねじょう",
+            "address": "滋賀県彦根市金亀町",
+            "prefecture": "滋賀県",
+            "lat": 35.2744,
+            "lon": 136.2511,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-051",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "安土城",
+            "nameKana": "あづちじょう",
+            "address": "滋賀県近江八幡市安土町下豊浦",
+            "prefecture": "滋賀県",
+            "lat": 35.1428,
+            "lon": 136.1354,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-052",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "観音寺城",
+            "nameKana": "かんのんじじょう",
+            "address": "滋賀県近江八幡市安土町",
+            "prefecture": "滋賀県",
+            "lat": 35.1198,
+            "lon": 136.1305,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-053",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "二条城",
+            "nameKana": "にじょうじょう",
+            "address": "京都府京都市中京区二条城町",
+            "prefecture": "京都府",
+            "lat": 35.0142,
+            "lon": 135.7476,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-054",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "大阪城",
+            "nameKana": "おおさかじょう",
+            "address": "大阪府大阪市中央区大阪城",
+            "prefecture": "大阪府",
+            "lat": 34.6873,
+            "lon": 135.5259,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-055",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "千早城",
+            "nameKana": "ちはやじょう",
+            "address": "大阪府南河内郡千早赤阪村",
+            "prefecture": "大阪府",
+            "lat": 34.4458,
+            "lon": 135.6241,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-056",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "竹田城",
+            "nameKana": "たけだじょう",
+            "address": "兵庫県朝来市和田山町竹田",
+            "prefecture": "兵庫県",
+            "lat": 35.3128,
+            "lon": 134.8293,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-057",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "篠山城",
+            "nameKana": "ささやまじょう",
+            "address": "兵庫県丹波篠山市北新町",
+            "prefecture": "兵庫県",
+            "lat": 35.0718,
+            "lon": 135.2203,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-058",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "明石城",
+            "nameKana": "あかしじょう",
+            "address": "兵庫県明石市明石公園",
+            "prefecture": "兵庫県",
+            "lat": 34.6494,
+            "lon": 134.9975,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-059",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "姫路城",
+            "nameKana": "ひめじじょう",
+            "address": "兵庫県姫路市本町",
+            "prefecture": "兵庫県",
+            "lat": 34.8394,
+            "lon": 134.6939,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-060",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "赤穂城",
+            "nameKana": "あこうじょう",
+            "address": "兵庫県赤穂市上仮屋",
+            "prefecture": "兵庫県",
+            "lat": 34.7549,
+            "lon": 134.3886,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-061",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "高取城",
+            "nameKana": "たかとりじょう",
+            "address": "奈良県高市郡高取町",
+            "prefecture": "奈良県",
+            "lat": 34.4061,
+            "lon": 135.7936,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-062",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "和歌山城",
+            "nameKana": "わかやまじょう",
+            "address": "和歌山県和歌山市一番丁",
+            "prefecture": "和歌山県",
+            "lat": 34.2261,
+            "lon": 135.1674,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-063",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "鳥取城",
+            "nameKana": "とっとりじょう",
+            "address": "鳥取県鳥取市東町",
+            "prefecture": "鳥取県",
+            "lat": 35.5032,
+            "lon": 134.2381,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-064",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "松江城",
+            "nameKana": "まつえじょう",
+            "address": "島根県松江市殿町",
+            "prefecture": "島根県",
+            "lat": 35.4751,
+            "lon": 133.0505,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-065",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "月山富田城",
+            "nameKana": "がっさんとだじょう",
+            "address": "島根県安来市広瀬町",
+            "prefecture": "島根県",
+            "lat": 35.256,
+            "lon": 133.1324,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-066",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "津和野城",
+            "nameKana": "つわのじょう",
+            "address": "島根県鹿足郡津和野町後田",
+            "prefecture": "島根県",
+            "lat": 34.4673,
+            "lon": 131.7543,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-067",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "津山城",
+            "nameKana": "つやまじょう",
+            "address": "岡山県津山市山下",
+            "prefecture": "岡山県",
+            "lat": 35.0695,
+            "lon": 134.0047,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-068",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "備中松山城",
+            "nameKana": "びっちゅうまつやまじょう",
+            "address": "岡山県高梁市内山下",
+            "prefecture": "岡山県",
+            "lat": 34.7914,
+            "lon": 133.6221,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-069",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "鬼ノ城",
+            "nameKana": "きのじょう",
+            "address": "岡山県総社市奥坂",
+            "prefecture": "岡山県",
+            "lat": 34.7576,
+            "lon": 133.7286,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-070",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "岡山城",
+            "nameKana": "おかやまじょう",
+            "address": "岡山県岡山市北区丸の内",
+            "prefecture": "岡山県",
+            "lat": 34.6668,
+            "lon": 133.935,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-071",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "福山城",
+            "nameKana": "ふくやまじょう",
+            "address": "広島県福山市丸之内",
+            "prefecture": "広島県",
+            "lat": 34.4858,
+            "lon": 133.3622,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-072",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "吉田郡山城",
+            "nameKana": "よしだこおりやまじょう",
+            "address": "広島県安芸高田市吉田町",
+            "prefecture": "広島県",
+            "lat": 34.6667,
+            "lon": 132.6992,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-073",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "広島城",
+            "nameKana": "ひろしまじょう",
+            "address": "広島県広島市中区基町",
+            "prefecture": "広島県",
+            "lat": 34.4019,
+            "lon": 132.4594,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-074",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "岩国城",
+            "nameKana": "いわくにじょう",
+            "address": "山口県岩国市横山",
+            "prefecture": "山口県",
+            "lat": 34.1692,
+            "lon": 132.1742,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-075",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "萩城",
+            "nameKana": "はぎじょう",
+            "address": "山口県萩市堀内",
+            "prefecture": "山口県",
+            "lat": 34.4125,
+            "lon": 131.3937,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-076",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "徳島城",
+            "nameKana": "とくしまじょう",
+            "address": "徳島県徳島市徳島町城内",
+            "prefecture": "徳島県",
+            "lat": 34.0741,
+            "lon": 134.5534,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-077",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "高松城",
+            "nameKana": "たかまつじょう",
+            "address": "香川県高松市玉藻町",
+            "prefecture": "香川県",
+            "lat": 34.3524,
+            "lon": 134.0472,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-078",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "丸亀城",
+            "nameKana": "まるがめじょう",
+            "address": "香川県丸亀市一番丁",
+            "prefecture": "香川県",
+            "lat": 34.2896,
+            "lon": 133.7976,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-079",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "今治城",
+            "nameKana": "いまばりじょう",
+            "address": "愛媛県今治市通町",
+            "prefecture": "愛媛県",
+            "lat": 34.0666,
+            "lon": 132.9977,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-080",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "湯築城",
+            "nameKana": "ゆづきじょう",
+            "address": "愛媛県松山市道後公園",
+            "prefecture": "愛媛県",
+            "lat": 33.85,
+            "lon": 132.7863,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-081",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "松山城",
+            "nameKana": "まつやまじょう",
+            "address": "愛媛県松山市丸之内",
+            "prefecture": "愛媛県",
+            "lat": 33.8417,
+            "lon": 132.7656,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-082",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "大洲城",
+            "nameKana": "おおずじょう",
+            "address": "愛媛県大洲市大洲",
+            "prefecture": "愛媛県",
+            "lat": 33.5025,
+            "lon": 132.5378,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-083",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "宇和島城",
+            "nameKana": "うわじまじょう",
+            "address": "愛媛県宇和島市丸之内",
+            "prefecture": "愛媛県",
+            "lat": 33.2232,
+            "lon": 132.5608,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-084",
+            "collectionIds": [
+                "nihon100",
+                "genzontenshu",
+                "all"
+            ],
+            "nameJa": "高知城",
+            "nameKana": "こうちじょう",
+            "address": "高知県高知市丸ノ内",
+            "prefecture": "高知県",
+            "lat": 33.5597,
+            "lon": 133.5311,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-085",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "福岡城",
+            "nameKana": "ふくおかじょう",
+            "address": "福岡県福岡市中央区城内",
+            "prefecture": "福岡県",
+            "lat": 33.5835,
+            "lon": 130.381,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-086",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "大野城",
+            "nameKana": "おおのじょう",
+            "address": "福岡県大野城市",
+            "prefecture": "福岡県",
+            "lat": 33.5364,
+            "lon": 130.5242,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-087",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "名護屋城",
+            "nameKana": "なごやじょう",
+            "address": "佐賀県唐津市鎮西町",
+            "prefecture": "佐賀県",
+            "lat": 33.5541,
+            "lon": 129.8896,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-088",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "吉野ヶ里",
+            "nameKana": "よしのがり",
+            "address": "佐賀県神埼郡吉野ヶ里町田手",
+            "prefecture": "佐賀県",
+            "lat": 33.3663,
+            "lon": 130.3676,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-089",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "佐賀城",
+            "nameKana": "さがじょう",
+            "address": "佐賀県佐賀市城内",
+            "prefecture": "佐賀県",
+            "lat": 33.2528,
+            "lon": 130.3014,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-090",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "平戸城",
+            "nameKana": "ひらどじょう",
+            "address": "長崎県平戸市岩の上町",
+            "prefecture": "長崎県",
+            "lat": 33.3689,
+            "lon": 129.5537,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-091",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "島原城",
+            "nameKana": "しまばらじょう",
+            "address": "長崎県島原市城内",
+            "prefecture": "長崎県",
+            "lat": 32.7883,
+            "lon": 130.3707,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-092",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "熊本城",
+            "nameKana": "くまもとじょう",
+            "address": "熊本県熊本市中央区本丸",
+            "prefecture": "熊本県",
+            "lat": 32.8031,
+            "lon": 130.7079,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-093",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "人吉城",
+            "nameKana": "ひとよしじょう",
+            "address": "熊本県人吉市麓町",
+            "prefecture": "熊本県",
+            "lat": 32.21,
+            "lon": 130.7542,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-094",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "大分府内城",
+            "nameKana": "おおいたふないじょう",
+            "address": "大分県大分市荷揚町",
+            "prefecture": "大分県",
+            "lat": 33.2397,
+            "lon": 131.6128,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-095",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "岡城",
+            "nameKana": "おかじょう",
+            "address": "大分県竹田市竹田",
+            "prefecture": "大分県",
+            "lat": 32.9728,
+            "lon": 131.3963,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-096",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "飫肥城",
+            "nameKana": "おびじょう",
+            "address": "宮崎県日南市飫肥",
+            "prefecture": "宮崎県",
+            "lat": 31.6029,
+            "lon": 131.3744,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-097",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "鹿児島城",
+            "nameKana": "かごしまじょう",
+            "address": "鹿児島県鹿児島市城山町",
+            "prefecture": "鹿児島県",
+            "lat": 31.5968,
+            "lon": 130.5572,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-098",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "今帰仁城",
+            "nameKana": "なきじんじょう",
+            "address": "沖縄県国頭郡今帰仁村今泊",
+            "prefecture": "沖縄県",
+            "lat": 26.6953,
+            "lon": 127.9357,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-099",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "中城城",
+            "nameKana": "なかぐすくじょう",
+            "address": "沖縄県中頭郡中城村泊",
+            "prefecture": "沖縄県",
+            "lat": 26.2729,
+            "lon": 127.8064,
+            "isActive": true
+        },
+        {
+            "id": "nihon100-100",
+            "collectionIds": [
+                "nihon100",
+                "all"
+            ],
+            "nameJa": "首里城",
+            "nameKana": "しゅりじょう",
+            "address": "沖縄県那覇市首里金城町",
+            "prefecture": "沖縄県",
+            "lat": 26.2188,
+            "lon": 127.7192,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-101",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "志苔館",
+            "nameKana": "しのりたて",
+            "address": "北海道函館市志海苔町",
+            "prefecture": "北海道",
+            "lat": 41.8034,
+            "lon": 140.8225,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-102",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "上ノ国勝山館",
+            "nameKana": "かみのくにかつやまだて",
+            "address": "北海道檜山郡上ノ国町勝山",
+            "prefecture": "北海道",
+            "lat": 41.8014,
+            "lon": 140.1164,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-103",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "浪岡城",
+            "nameKana": "なみおかじょう",
+            "address": "青森県青森市浪岡",
+            "prefecture": "青森県",
+            "lat": 40.7107,
+            "lon": 140.5816,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-104",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "九戸城",
+            "nameKana": "くのへじょう",
+            "address": "岩手県二戸市福岡城ノ内",
+            "prefecture": "岩手県",
+            "lat": 40.2715,
+            "lon": 141.2965,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-105",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "白石城",
+            "nameKana": "しろいしじょう",
+            "address": "宮城県白石市益岡町",
+            "prefecture": "宮城県",
+            "lat": 38.0028,
+            "lon": 140.619,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-106",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "脇本城",
+            "nameKana": "わきもとじょう",
+            "address": "秋田県男鹿市脇本富永",
+            "prefecture": "秋田県",
+            "lat": 39.9575,
+            "lon": 139.9079,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-107",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "秋田城",
+            "nameKana": "あきたじょう",
+            "address": "秋田県秋田市寺内",
+            "prefecture": "秋田県",
+            "lat": 39.7479,
+            "lon": 140.0658,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-108",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "鶴ヶ岡城",
+            "nameKana": "つるがおかじょう",
+            "address": "山形県鶴岡市馬場町",
+            "prefecture": "山形県",
+            "lat": 38.7254,
+            "lon": 139.8269,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-109",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "米沢城",
+            "nameKana": "よねざわじょう",
+            "address": "山形県米沢市丸の内",
+            "prefecture": "山形県",
+            "lat": 37.909,
+            "lon": 140.1204,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-110",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "三春城",
+            "nameKana": "みはるじょう",
+            "address": "福島県田村郡三春町字北町",
+            "prefecture": "福島県",
+            "lat": 37.4455,
+            "lon": 140.4938,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-111",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "向羽黒山城",
+            "nameKana": "むかいはぐろやまじょう",
+            "address": "福島県大沼郡会津美里町",
+            "prefecture": "福島県",
+            "lat": 37.4618,
+            "lon": 139.9479,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-112",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "笠間城",
+            "nameKana": "かさまじょう",
+            "address": "茨城県笠間市笠間",
+            "prefecture": "茨城県",
+            "lat": 36.3484,
+            "lon": 140.3047,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-113",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "土浦城",
+            "nameKana": "つちうらじょう",
+            "address": "茨城県土浦市中央",
+            "prefecture": "茨城県",
+            "lat": 36.078,
+            "lon": 140.2055,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-114",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "唐沢山城",
+            "nameKana": "からさわやまじょう",
+            "address": "栃木県佐野市富士町",
+            "prefecture": "栃木県",
+            "lat": 36.3236,
+            "lon": 139.5706,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-115",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "名胡桃城",
+            "nameKana": "なぐるみじょう",
+            "address": "群馬県利根郡みなかみ町下津",
+            "prefecture": "群馬県",
+            "lat": 36.691,
+            "lon": 138.9997,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-116",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "沼田城",
+            "nameKana": "ぬまたじょう",
+            "address": "群馬県沼田市西倉内町",
+            "prefecture": "群馬県",
+            "lat": 36.6479,
+            "lon": 139.0426,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-117",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "岩櫃城",
+            "nameKana": "いわびつじょう",
+            "address": "群馬県吾妻郡東吾妻町原町",
+            "prefecture": "群馬県",
+            "lat": 36.5615,
+            "lon": 138.8432,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-118",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "忍城",
+            "nameKana": "おしじょう",
+            "address": "埼玉県行田市本丸",
+            "prefecture": "埼玉県",
+            "lat": 36.1408,
+            "lon": 139.4555,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-119",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "杉山城",
+            "nameKana": "すぎやまじょう",
+            "address": "埼玉県比企郡嵐山町杉山",
+            "prefecture": "埼玉県",
+            "lat": 36.0584,
+            "lon": 139.3215,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-120",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "菅谷館",
+            "nameKana": "すがややかた",
+            "address": "埼玉県比企郡嵐山町菅谷",
+            "prefecture": "埼玉県",
+            "lat": 36.0523,
+            "lon": 139.3176,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-121",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "本佐倉城",
+            "nameKana": "もとさくらじょう",
+            "address": "千葉県印旛郡酒々井町本佐倉、佐倉市",
+            "prefecture": "千葉県",
+            "lat": 35.728,
+            "lon": 140.2602,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-122",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "大多喜城",
+            "nameKana": "おおたきじょう",
+            "address": "千葉県夷隅郡大多喜町大多喜",
+            "prefecture": "千葉県",
+            "lat": 35.2884,
+            "lon": 140.2439,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-123",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "滝山城",
+            "nameKana": "たきやまじょう",
+            "address": "東京都八王子市丹木町",
+            "prefecture": "東京都",
+            "lat": 35.6782,
+            "lon": 139.3344,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-124",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "品川台場",
+            "nameKana": "しながわだいば",
+            "address": "東京都港区台場",
+            "prefecture": "東京都",
+            "lat": 35.634,
+            "lon": 139.7708,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-125",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "小机城",
+            "nameKana": "こづくえじょう",
+            "address": "神奈川県横浜市港北区小机町",
+            "prefecture": "神奈川県",
+            "lat": 35.5102,
+            "lon": 139.6018,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-126",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "石垣山城",
+            "nameKana": "いしがきやまじょう",
+            "address": "神奈川県小田原市早川",
+            "prefecture": "神奈川県",
+            "lat": 35.2493,
+            "lon": 139.1363,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-127",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "新府城",
+            "nameKana": "しんぷじょう",
+            "address": "山梨県韮崎市中田町中條",
+            "prefecture": "山梨県",
+            "lat": 35.7085,
+            "lon": 138.4239,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-128",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "要害山城",
+            "nameKana": "ようがいさんじょう",
+            "address": "山梨県甲府市上積翠寺町",
+            "prefecture": "山梨県",
+            "lat": 35.7017,
+            "lon": 138.6019,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-129",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "龍岡城",
+            "nameKana": "たつおかじょう",
+            "address": "長野県佐久市田口",
+            "prefecture": "長野県",
+            "lat": 36.2155,
+            "lon": 138.4733,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-130",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "高島城",
+            "nameKana": "たかしまじょう",
+            "address": "長野県諏訪市高島",
+            "prefecture": "長野県",
+            "lat": 36.048,
+            "lon": 138.1133,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-131",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "村上城",
+            "nameKana": "むらかみじょう",
+            "address": "新潟県村上市本町",
+            "prefecture": "新潟県",
+            "lat": 38.224,
+            "lon": 139.4806,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-132",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "高田城",
+            "nameKana": "たかだじょう",
+            "address": "新潟県上越市本城町",
+            "prefecture": "新潟県",
+            "lat": 37.1239,
+            "lon": 138.2554,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-133",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "鮫ケ尾城",
+            "nameKana": "さめがおじょう",
+            "address": "新潟県妙高市宮内",
+            "prefecture": "新潟県",
+            "lat": 37.0373,
+            "lon": 138.2482,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-134",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "富山城",
+            "nameKana": "とやまじょう",
+            "address": "富山県富山市本丸",
+            "prefecture": "富山県",
+            "lat": 36.6958,
+            "lon": 137.2137,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-135",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "増山城",
+            "nameKana": "ますやまじょう",
+            "address": "富山県砺波市増山",
+            "prefecture": "富山県",
+            "lat": 36.6237,
+            "lon": 137.0025,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-136",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "鳥越城",
+            "nameKana": "とりごえじょう",
+            "address": "石川県白山市三坂町",
+            "prefecture": "石川県",
+            "lat": 36.3672,
+            "lon": 136.6232,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-137",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "福井城",
+            "nameKana": "ふくいじょう",
+            "address": "福井県福井市大手",
+            "prefecture": "福井県",
+            "lat": 36.0649,
+            "lon": 136.2192,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-138",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "越前大野城",
+            "nameKana": "えちぜんおおのじょう",
+            "address": "福井県大野市城町",
+            "prefecture": "福井県",
+            "lat": 35.9801,
+            "lon": 136.4904,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-139",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "佐柿国吉城",
+            "nameKana": "さかきくによしじょう",
+            "address": "福井県三方郡美浜町佐柿",
+            "prefecture": "福井県",
+            "lat": 35.6236,
+            "lon": 135.9356,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-140",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "玄蕃尾城",
+            "nameKana": "げんばおじょう",
+            "address": "福井県敦賀市刀根",
+            "prefecture": "福井県",
+            "lat": 35.7856,
+            "lon": 136.0896,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-141",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "郡上八幡城",
+            "nameKana": "ぐじょうはちまんじょう",
+            "address": "岐阜県郡上市八幡町柳町",
+            "prefecture": "岐阜県",
+            "lat": 35.7494,
+            "lon": 136.9602,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-142",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "苗木城",
+            "nameKana": "なえぎじょう",
+            "address": "岐阜県中津川市苗木",
+            "prefecture": "岐阜県",
+            "lat": 35.5119,
+            "lon": 137.5,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-143",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "美濃金山城",
+            "nameKana": "みのかなやまじょう",
+            "address": "岐阜県可児市兼山",
+            "prefecture": "岐阜県",
+            "lat": 35.4723,
+            "lon": 137.0936,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-144",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "大垣城",
+            "nameKana": "おおがきじょう",
+            "address": "岐阜県大垣市郭町",
+            "prefecture": "岐阜県",
+            "lat": 35.3669,
+            "lon": 136.6183,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-145",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "興国寺城",
+            "nameKana": "こうこくじじょう",
+            "address": "静岡県沼津市根古屋",
+            "prefecture": "静岡県",
+            "lat": 35.1262,
+            "lon": 138.8339,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-146",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "諏訪原城",
+            "nameKana": "すわはらじょう",
+            "address": "静岡県島田市金谷",
+            "prefecture": "静岡県",
+            "lat": 34.8247,
+            "lon": 138.1031,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-147",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "高天神城",
+            "nameKana": "たかてんじんじょう",
+            "address": "静岡県掛川市下土方",
+            "prefecture": "静岡県",
+            "lat": 34.7138,
+            "lon": 138.0409,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-148",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "浜松城",
+            "nameKana": "はままつじょう",
+            "address": "静岡県浜松市中区元城町",
+            "prefecture": "静岡県",
+            "lat": 34.71,
+            "lon": 137.7261,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-149",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "小牧山城",
+            "nameKana": "こまきやまじょう",
+            "address": "愛知県小牧市堀の内",
+            "prefecture": "愛知県",
+            "lat": 35.2898,
+            "lon": 136.9131,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-150",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "古宮城",
+            "nameKana": "こみやじょう",
+            "address": "愛知県新城市作手清岳",
+            "prefecture": "愛知県",
+            "lat": 35.0277,
+            "lon": 137.4678,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-151",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "吉田城",
+            "nameKana": "よしだじょう",
+            "address": "愛知県豊橋市今橋町",
+            "prefecture": "愛知県",
+            "lat": 34.7697,
+            "lon": 137.3916,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-152",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "津城",
+            "nameKana": "つじょう",
+            "address": "三重県津市丸之内",
+            "prefecture": "三重県",
+            "lat": 34.7189,
+            "lon": 136.5056,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-153",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "多気北畠氏城館",
+            "nameKana": "たげきたばたけしじょうかん",
+            "address": "三重県津市美杉町上多気",
+            "prefecture": "三重県",
+            "lat": 34.5391,
+            "lon": 136.355,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-154",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "田丸城",
+            "nameKana": "たまるじょう",
+            "address": "三重県度会郡玉城町田丸",
+            "prefecture": "三重県",
+            "lat": 34.4877,
+            "lon": 136.6157,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-155",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "赤木城",
+            "nameKana": "あかぎじょう",
+            "address": "三重県熊野市赤木町",
+            "prefecture": "三重県",
+            "lat": 34.0707,
+            "lon": 136.0926,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-156",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "鎌刃城",
+            "nameKana": "かまはじょう",
+            "address": "滋賀県米原市番場",
+            "prefecture": "滋賀県",
+            "lat": 35.3611,
+            "lon": 136.3163,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-157",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "八幡山城",
+            "nameKana": "はちまんやまじょう",
+            "address": "滋賀県近江八幡市宮内町",
+            "prefecture": "滋賀県",
+            "lat": 35.1287,
+            "lon": 136.0986,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-158",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "福知山城",
+            "nameKana": "ふくちやまじょう",
+            "address": "京都府福知山市内記",
+            "prefecture": "京都府",
+            "lat": 35.296,
+            "lon": 135.1269,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-159",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "芥川山城",
+            "nameKana": "あくたがわやまじょう",
+            "address": "大阪府高槻市原",
+            "prefecture": "大阪府",
+            "lat": 34.8974,
+            "lon": 135.6121,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-160",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "飯盛城",
+            "nameKana": "いいもりじょう",
+            "address": "大阪府大東市・四條畷市",
+            "prefecture": "大阪府",
+            "lat": 34.7058,
+            "lon": 135.6583,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-161",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "岸和田城",
+            "nameKana": "きしわだじょう",
+            "address": "大阪府岸和田市岸城町",
+            "prefecture": "大阪府",
+            "lat": 34.4711,
+            "lon": 135.3704,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-162",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "出石城・有子山城",
+            "nameKana": "いずしじょう・ありこやまじょう",
+            "address": "兵庫県豊岡市出石町",
+            "prefecture": "兵庫県",
+            "lat": 35.4633,
+            "lon": 134.8662,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-163",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "黒井城",
+            "nameKana": "くろいじょう",
+            "address": "兵庫県丹波市春日町",
+            "prefecture": "兵庫県",
+            "lat": 35.1792,
+            "lon": 135.0693,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-164",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "洲本城",
+            "nameKana": "すもとじょう",
+            "address": "兵庫県洲本市小路谷",
+            "prefecture": "兵庫県",
+            "lat": 34.3405,
+            "lon": 134.8952,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-165",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "大和郡山城",
+            "nameKana": "やまとこおりやまじょう",
+            "address": "奈良県大和郡山市城内町",
+            "prefecture": "奈良県",
+            "lat": 34.6503,
+            "lon": 135.7845,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-166",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "宇陀松山城",
+            "nameKana": "うだまつやまじょう",
+            "address": "奈良県宇陀市大宇陀岩清水",
+            "prefecture": "奈良県",
+            "lat": 34.5404,
+            "lon": 135.951,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-167",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "新宮城",
+            "nameKana": "しんぐうじょう",
+            "address": "和歌山県新宮市新宮",
+            "prefecture": "和歌山県",
+            "lat": 33.7243,
+            "lon": 135.9937,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-168",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "若桜鬼ケ城",
+            "nameKana": "わかさおにがじょう",
+            "address": "鳥取県八頭郡若桜町三宅",
+            "prefecture": "鳥取県",
+            "lat": 35.319,
+            "lon": 134.3973,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-169",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "米子城",
+            "nameKana": "よなごじょう",
+            "address": "鳥取県米子市久米町",
+            "prefecture": "鳥取県",
+            "lat": 35.4315,
+            "lon": 133.3325,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-170",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "浜田城",
+            "nameKana": "はまだじょう",
+            "address": "島根県浜田市殿町",
+            "prefecture": "島根県",
+            "lat": 34.899,
+            "lon": 132.0808,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-171",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "備中高松城",
+            "nameKana": "びっちゅうたかまつじょう",
+            "address": "岡山県岡山市北区高松",
+            "prefecture": "岡山県",
+            "lat": 34.6802,
+            "lon": 133.8382,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-172",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "三原城",
+            "nameKana": "みはらじょう",
+            "address": "広島県三原市城町",
+            "prefecture": "広島県",
+            "lat": 34.3991,
+            "lon": 133.0832,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-173",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "新高山城",
+            "nameKana": "にいたかやまじょう",
+            "address": "広島県三原市本郷町",
+            "prefecture": "広島県",
+            "lat": 34.4865,
+            "lon": 132.9846,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-174",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "大内氏館・高嶺城",
+            "nameKana": "おおうちしやかた・たかみねじょう",
+            "address": "山口県山口市大内御堀",
+            "prefecture": "山口県",
+            "lat": 34.159,
+            "lon": 131.473,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-175",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "勝瑞城",
+            "nameKana": "しょうずいじょう",
+            "address": "徳島県板野郡藍住町勝瑞",
+            "prefecture": "徳島県",
+            "lat": 34.1255,
+            "lon": 134.4987,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-176",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "一宮城",
+            "nameKana": "いちのみやじょう",
+            "address": "徳島県徳島市一宮町",
+            "prefecture": "徳島県",
+            "lat": 33.9522,
+            "lon": 134.4687,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-177",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "引田城",
+            "nameKana": "ひけたじょう",
+            "address": "香川県東かがわ市引田",
+            "prefecture": "香川県",
+            "lat": 34.2406,
+            "lon": 134.414,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-178",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "能島城",
+            "nameKana": "のしまじょう",
+            "address": "愛媛県今治市宮窪町",
+            "prefecture": "愛媛県",
+            "lat": 34.185,
+            "lon": 133.0385,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-179",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "河後森城",
+            "nameKana": "かごもりじょう",
+            "address": "愛媛県北宇和郡松野町河後森",
+            "prefecture": "愛媛県",
+            "lat": 33.2479,
+            "lon": 132.6747,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-180",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "岡豊城",
+            "nameKana": "おこうじょう",
+            "address": "高知県南国市岡豊町",
+            "prefecture": "高知県",
+            "lat": 33.5753,
+            "lon": 133.6125,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-181",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "小倉城",
+            "nameKana": "こくらじょう",
+            "address": "福岡県北九州市小倉北区城内",
+            "prefecture": "福岡県",
+            "lat": 33.8851,
+            "lon": 130.875,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-182",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "水城",
+            "nameKana": "みずき",
+            "address": "福岡県太宰府市・大野城市・春日市",
+            "prefecture": "福岡県",
+            "lat": 33.5274,
+            "lon": 130.4943,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-183",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "久留米城",
+            "nameKana": "くるめじょう",
+            "address": "福岡県久留米市篠山町",
+            "prefecture": "福岡県",
+            "lat": 33.3101,
+            "lon": 130.5128,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-184",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "基肄城",
+            "nameKana": "きいじょう",
+            "address": "福岡県筑紫野市・佐賀県基山町",
+            "prefecture": "福岡県・佐賀県",
+            "lat": 33.4365,
+            "lon": 130.5385,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-185",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "唐津城",
+            "nameKana": "からつじょう",
+            "address": "佐賀県唐津市東城内",
+            "prefecture": "佐賀県",
+            "lat": 33.45,
+            "lon": 129.9683,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-186",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "金田城",
+            "nameKana": "かなたのき",
+            "address": "長崎県対馬市美津島町",
+            "prefecture": "長崎県",
+            "lat": 34.2847,
+            "lon": 129.344,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-187",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "福江城",
+            "nameKana": "ふくえじょう",
+            "address": "長崎県五島市池田町",
+            "prefecture": "長崎県",
+            "lat": 32.6931,
+            "lon": 128.8401,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-188",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "原城",
+            "nameKana": "はらじょう",
+            "address": "長崎県南島原市南有馬町",
+            "prefecture": "長崎県",
+            "lat": 32.615,
+            "lon": 130.2635,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-189",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "鞠智城",
+            "nameKana": "きくちじょう（くくちのき）",
+            "address": "熊本県山鹿市・菊池市",
+            "prefecture": "熊本県",
+            "lat": 33.046,
+            "lon": 130.8203,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-190",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "八代城",
+            "nameKana": "やつしろじょう",
+            "address": "熊本県八代市松江城町",
+            "prefecture": "熊本県",
+            "lat": 32.5077,
+            "lon": 130.6019,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-191",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "中津城",
+            "nameKana": "なかつじょう",
+            "address": "大分県中津市二ノ丁本丸",
+            "prefecture": "大分県",
+            "lat": 33.5985,
+            "lon": 131.1887,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-192",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "角牟礼城",
+            "nameKana": "つのむれじょう",
+            "address": "大分県玖珠郡玖珠町森",
+            "prefecture": "大分県",
+            "lat": 33.2858,
+            "lon": 131.1455,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-193",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "臼杵城",
+            "nameKana": "うすきじょう",
+            "address": "大分県臼杵市臼杵",
+            "prefecture": "大分県",
+            "lat": 33.1232,
+            "lon": 131.8039,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-194",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "佐伯城",
+            "nameKana": "さいきじょう",
+            "address": "大分県佐伯市城山町",
+            "prefecture": "大分県",
+            "lat": 32.9612,
+            "lon": 131.9014,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-195",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "延岡城",
+            "nameKana": "のべおかじょう",
+            "address": "宮崎県延岡市東本小路",
+            "prefecture": "宮崎県",
+            "lat": 32.5818,
+            "lon": 131.6642,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-196",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "佐土原城",
+            "nameKana": "さどわらじょう",
+            "address": "宮崎県宮崎市佐土原町上田島",
+            "prefecture": "宮崎県",
+            "lat": 32.0594,
+            "lon": 131.4196,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-197",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "志布志城",
+            "nameKana": "しぶしじょう",
+            "address": "鹿児島県志布志市志布志町",
+            "prefecture": "鹿児島県",
+            "lat": 31.4727,
+            "lon": 131.0946,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-198",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "知覧城",
+            "nameKana": "ちらんじょう",
+            "address": "鹿児島県南九州市知覧町",
+            "prefecture": "鹿児島県",
+            "lat": 31.3733,
+            "lon": 130.4368,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-199",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "座喜味城",
+            "nameKana": "ざきみじょう",
+            "address": "沖縄県中頭郡読谷村座喜味",
+            "prefecture": "沖縄県",
+            "lat": 26.3931,
+            "lon": 127.7365,
+            "isActive": true
+        },
+        {
+            "id": "zoku100-200",
+            "collectionIds": [
+                "zoku100",
+                "all"
+            ],
+            "nameJa": "勝連城",
+            "nameKana": "かつれんじょう",
+            "address": "沖縄県うるま市勝連南風原",
+            "prefecture": "沖縄県",
+            "lat": 26.31,
+            "lon": 127.8781,
+            "isActive": true
+        }
+    ],
+    "collections": [
+        {
+            "id": "nihon100",
+            "title": "百名城",
+            "iconName": "Collection100",
+            "order": 1
+        },
+        {
+            "id": "zoku100",
+            "title": "続百名城",
+            "iconName": "CollectionZoku100",
+            "order": 2
+        },
+        {
+            "id": "genzontenshu",
+            "title": "現存天守",
+            "iconName": "CollectionGenzon",
+            "order": 3
+        },
+        {
+            "id": "all",
+            "title": "すべて",
+            "iconName": "CollectionAll",
+            "order": 4
+        }
+    ]
 }

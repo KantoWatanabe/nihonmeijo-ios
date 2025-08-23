@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct CastleCollectionCellProps {
-    let item: CastleCollectionModel
+    let item: CollectionModel
     let onTap: () -> Void
 }
 
