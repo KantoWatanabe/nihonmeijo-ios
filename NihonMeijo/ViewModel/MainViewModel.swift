@@ -18,7 +18,7 @@ final class MainViewModel {
     // MARK: - UIユーティリティ
     @MainActor func startLoading() { loadingCount += 1 }
     @MainActor func stopLoading()  { loadingCount = max(loadingCount - 1, 0) }
-    @MainActor func setError(error: Error) {
+    @MainActor func setError(_ error: Error) {
         if let app = error as? AppError { errorMessage = app.message }
         else { errorMessage = error.localizedDescription }
     }
@@ -29,7 +29,7 @@ final class MainViewModel {
     func run(_ work: @escaping () throws -> Void) {
         startLoading()
         defer { stopLoading() }
-        do { try work() } catch { setError(error: error) }
+        do { try work() } catch { setError(error) }
     }
 
     /// 非同期版
@@ -37,7 +37,7 @@ final class MainViewModel {
     func runAsync(_ work: @escaping () async throws -> Void) async {
         startLoading()
         defer { stopLoading() }
-        do { try await work() } catch { setError(error: error) }
+        do { try await work() } catch { setError(error) }
     }
 
     // MARK: - 起動時のマスタ同期（1回だけ）

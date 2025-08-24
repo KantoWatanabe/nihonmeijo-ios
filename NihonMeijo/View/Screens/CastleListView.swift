@@ -7,6 +7,7 @@ import SwiftUI
 
 struct CastleListView: View {
     let collection: CollectionModel
+    @EnvironmentObject var nav: Navigator
     @Environment(MainViewModel.self) private var mainVM
     @State private var vm: CastleListViewModel
     
@@ -28,7 +29,9 @@ struct CastleListView: View {
             } else {
                 LazyVGrid(columns: columns, spacing: 12) {
                     ForEach(vm.castles) { item in
-                        CastleCell(props: CastleCellProps(item: item, onTap: {}))
+                        CastleCell(props: CastleCellProps(item: item, onTap: {
+                            nav.push(.castleDetail(item))
+                        }))
                     }
                 }
                 .padding(.horizontal, 16)

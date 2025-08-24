@@ -7,7 +7,7 @@ import Foundation
 
 struct CastleMapper {
     static func toModel(_ e: CastleEntity) -> CastleModel {
-        CastleModel(id: e.id, nameJa: e.nameJa, nameKana: e.nameKana, address: e.address, prefecture: PrefCode(rawValue: e.prefecture) ?? .tokyo, isActive: e.isActive)
+        CastleModel(id: e.id, nameJa: e.nameJa, nameKana: e.nameKana, address: e.address, prefecture: PrefCode(rawValue: e.prefecture) ?? .tokyo, isActive: e.isActive, primaryPhotoLocalId: e.primaryPhotoLocalId, isCleared: e.isCleared, clearedAt: e.clearedAt, rating: e.rating, clearedCostYen: e.clearedCostYen)
     }
 
     static func toModels(_ entities: [CastleEntity]) -> [CastleModel] {
@@ -21,8 +21,8 @@ struct CastleUpsertParams {
     let nameKana: String
     let address: String
     let prefecture: String
-    let lat: Double
-    let lon: Double
+    let lat: Double?
+    let lon: Double?
     let isActive: Bool
     let collections: [CollectionEntity]
 }

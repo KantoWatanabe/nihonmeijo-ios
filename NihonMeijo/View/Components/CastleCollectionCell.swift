@@ -33,7 +33,7 @@ struct CastleCollectionCell: View {
                 }
                 
                 Text(props.item.title)
-                    .font(.headline)
+                    .font(.title2)
                     .foregroundStyle(.primary)
                     .lineLimit(1)
                     .minimumScaleFactor(0.8)

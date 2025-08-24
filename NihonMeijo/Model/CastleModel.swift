@@ -12,12 +12,12 @@ struct CastleModel: Codable, Identifiable, Hashable {
     let nameKana: String
     let address: String
     let prefecture: PrefCode
-    //let prefectureNameJa: String
     //let coordinate: CLLocationCoordinate2D
     let isActive: Bool
     
-    //let userRating: Int?
-    //let userNote: String?
-    //let lastVisitedAt: Date?
-    //let hasVisited: Bool
+    var primaryPhotoLocalId: String?
+    let isCleared: Bool
+    var clearedAt: Date?
+    var rating: Int? = nil
+    let clearedCostYen: Int?
 }

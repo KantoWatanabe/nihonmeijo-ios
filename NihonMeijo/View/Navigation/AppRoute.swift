@@ -9,6 +9,7 @@ enum AppRoute: Hashable {
     case home
     case help
     case castleList(CollectionModel)
+    case castleDetail(CastleModel)
 }
 
 extension AppRoute {
@@ -21,6 +22,8 @@ extension AppRoute {
             HelpView()
         case .castleList(let collection):
             CastleListView(collection: collection)
+        case .castleDetail(let castle):
+            CastleDetailView(castle: castle)
         }
     }
 }
