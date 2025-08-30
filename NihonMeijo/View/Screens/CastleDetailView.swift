@@ -9,15 +9,12 @@ import SwiftData
 
 struct CastleDetailView: View {
     let castle: CastleModel
+    @EnvironmentObject var nav: Navigator
     @Environment(MainViewModel.self) private var mainVM
     @State private var vm: CastleDetailViewModel
 
     @Environment(\.openURL) private var openURL
 
-    @State private var showSourceDialog = false
-    @State private var showLibraryPicker = false
-    @State private var showCameraPicker = false
-    @State private var photoItem: PhotosPickerItem?
     @FocusState private var focusedField: Bool
 
     private let rowHeight: CGFloat = 32
@@ -36,6 +33,8 @@ struct CastleDetailView: View {
                 InfoRow(label: "読み方", value: castle.nameKana)
                 InfoRow(label: "所在地", value: castle.address)
 
+                webSearchArea
+
                 isClearedArea
 
                 clearedAtArea
@@ -43,42 +42,11 @@ struct CastleDetailView: View {
                 ratingArea
 
                 clearedCostYenArea
-                
-                webSearchArea
+
+                castleVisitButton
             }
         }
         .navigationTitle(castle.nameJa)
-        .confirmationDialog("写真の追加方法を選択", isPresented: $showSourceDialog, titleVisibility: .visible) {
-            Button("写真ライブラリから選ぶ") {
-                Task {
-                    await mainVM.runAsync {
-                        try await vm.requestPhotoLibraryAccess()
-                        showLibraryPicker = true
-                    }
-                }
-            }
-            Button("写真を撮影する") { showCameraPicker = true }
-            Button("キャンセル", role: .cancel) { }
-        }
-        .photosPicker(isPresented: $showLibraryPicker, selection: $photoItem, matching: .images, photoLibrary: .shared())
-        .task(id: photoItem) {
-            guard let item = photoItem,
-                  let localId = item.itemIdentifier else { return }
-            await mainVM.runAsync {
-                try await vm.setPrimaryPhotoAsync(localId: localId)
-
-            }
-        }
-        .sheet(isPresented: $showCameraPicker) {
-            CameraPicker { localId in
-                Task {
-                    await mainVM.runAsync {
-                        try await vm.setPrimaryPhotoAsync(localId: localId)
-                    }
-                }
-            }
-            .ignoresSafeArea()
-        }
         .task {
             await mainVM.runAsync {
                 try vm.load()
@@ -88,49 +56,23 @@ struct CastleDetailView: View {
     
     var primaryPhotoArea: some View {
         Group {
-            ZStack(alignment: .topTrailing) {
-                if let localIdentifier = vm.primaryPhotoLocalId {
-                    PhotoAssetImage(localIdentifier: localIdentifier)
-                        .padding(8)
-
-                    Button {
-                        Task {
-                            await mainVM.runAsync { try await vm.setPrimaryPhotoAsync(localId: nil) }
-                        }
-                    } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .foregroundStyle(.white, .red)
-                            .font(.system(size: 32, weight: .bold))
-                            .shadow(radius: 2)
+            PhotoChooser(
+                photoLocalId: $vm.primaryPhotoLocalId,
+                onRequireLibraryAccess: {
+                    await mainVM.runAsync {
+                        try await vm.requestPhotoLibraryAccess()
                     }
-                } else {
-                    Button {
-                        showSourceDialog = true
-                    } label: {
-                        Image("Castle")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 120)
+                },
+                onSetLocalId: { localId in
+                    await mainVM.runAsync {
+                        try await vm.setPrimaryPhotoAsync(localId: localId)
                     }
-                }
-            }
-            .frame(maxWidth: 300)
-            .frame(maxWidth: .infinity, alignment: .center)
-            .padding(.top, 16)
-
-            Button {
-                showSourceDialog = true
-            } label: {
-                HStack(spacing: 8) {
-                    Image(systemName: "camera")
-                    Text("写真を追加")
-                }
-                .frame(maxWidth: .infinity)
-            }
-            .buttonStyle(.borderedProminent)
-            .padding(.horizontal, 32)
-            Divider().padding(.horizontal, 8)
+                },
+                allowsCamera: true,
+            )
+            Divider()
         }
+        .padding(.horizontal, 8)
     }
     
     func InfoRow(label: String, value: String) -> some View {
@@ -314,6 +256,20 @@ struct CastleDetailView: View {
             Divider()
         }
         .padding(.horizontal, 8)
+    }
+    
+    var castleVisitButton: some View {
+        Button {
+            nav.push(.castleVisitList(castle))
+        } label: {
+            HStack(spacing: 8) {
+                Image(systemName: "note.text")
+                Text("攻城記録")
+            }
+            .frame(maxWidth: .infinity)
+        }
+        .buttonStyle(.borderedProminent)
+        .padding(.horizontal, 32)
     }
     
     private func yenFormatter() -> NumberFormatter {

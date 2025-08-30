@@ -6,10 +6,16 @@
 import SwiftUI
 import Photos
 
+enum PhotoScaleMode {
+    case fit
+    case fill
+}
+
 struct PhotoAssetImage: View {
     let localIdentifier: String
     var targetSize: CGSize = .init(width: 800, height: 800)
     var phContentMode: PHImageContentMode = .aspectFit
+    var scaleMode: PhotoScaleMode = .fill
 
     @State private var image: UIImage?
     @State private var failed = false
@@ -17,10 +23,15 @@ struct PhotoAssetImage: View {
     var body: some View {
         Group {
             if let img = image {
-                Image(uiImage: img)
-                    .resizable()
-                    .scaledToFill()
-
+                if scaleMode == .fill {
+                    Image(uiImage: img)
+                        .resizable()
+                        .scaledToFill()
+                } else {
+                    Image(uiImage: img)
+                        .resizable()
+                        .scaledToFit()
+                }
             } else if failed {
                 Color.gray.opacity(0.2)
                     .overlay(Image(systemName: "photo.slash").imageScale(.large).opacity(0.7))

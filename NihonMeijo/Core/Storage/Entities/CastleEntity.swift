@@ -21,6 +21,9 @@ final class CastleEntity {
     @Relationship(inverse: \CollectionEntity.castles)
     var collections: [CollectionEntity] = []
 
+    @Relationship(deleteRule: .cascade, inverse: \CastleVisitEntity.castle)
+    var visits: [CastleVisitEntity] = []
+
     var primaryPhotoLocalId: String? = nil
     var isCleared: Bool
     var clearedAt: Date?
