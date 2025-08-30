@@ -17,6 +17,7 @@ struct PhotoChooser: View {
     @State private var showLibraryPicker = false
     @State private var showCameraPicker = false
     @State private var photoItem: PhotosPickerItem?
+    @State private var showDeleteAlert = false
 
     var body: some View {
         Group {
@@ -26,15 +27,23 @@ struct PhotoChooser: View {
                         .padding(8)
 
                     Button {
-                        Task {
-                            try? await onSetLocalId(nil)
-                            photoLocalId = nil
-                        }
+                        showDeleteAlert = true
                     } label: {
                         Image(systemName: "xmark.circle.fill")
                             .foregroundStyle(.white, .red)
                             .font(.system(size: 32, weight: .bold))
                             .shadow(radius: 2)
+                    }
+                    .alert("写真を削除しますか？", isPresented: $showDeleteAlert) {
+                        Button("削除", role: .destructive) {
+                            Task {
+                                try? await onSetLocalId(nil)
+                                photoLocalId = nil
+                            }
+                        }
+                        Button("キャンセル", role: .cancel) { }
+                    } message: {
+                        Text("選択中の写真は参照から外されます。ライブラリの実ファイルは削除されません。")
                     }
                 } else {
                     Button {
