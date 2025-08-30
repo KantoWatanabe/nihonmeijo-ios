@@ -22,7 +22,7 @@ struct PhotoChooser: View {
         Group {
             ZStack(alignment: .topTrailing) {
                 if let localId = photoLocalId {
-                    PhotoAssetImage(localIdentifier: localId)
+                    PhotoAssetImage(localIdentifier: localId, targetSize: .zero, enableFullscreen: true)
                         .padding(8)
 
                     Button {

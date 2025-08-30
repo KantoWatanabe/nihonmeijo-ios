@@ -35,9 +35,10 @@ struct CastleVisitCell: View {
                     Spacer()
                     PhotoAssetImage(
                         localIdentifier: localId,
-                        targetSize: CGSize(width: 800, height: 800),
+                        targetSize: .zero,
                         phContentMode: .aspectFit,
-                        scaleMode: .fit
+                        scaleMode: .fit,
+                        enableFullscreen: true
                     )
                     .frame(height: 240)
                     Spacer()
