@@ -30,6 +30,8 @@ final class CastleEntity {
     var rating: Int? = nil
     var clearedCostYen: Int? = nil
 
+    var isUserCreated: Bool = false
+
     var createdAt: Date
     var updatedAt: Date
 
@@ -41,7 +43,8 @@ final class CastleEntity {
         prefecture: String,
         lat: Double?,
         lon: Double?,
-        isActive: Bool
+        isActive: Bool,
+        isUserCreated: Bool
     ) {
         self.id = id
         self.nameJa = nameJa
@@ -51,6 +54,7 @@ final class CastleEntity {
         self.lat = lat
         self.lon = lon
         self.isActive = isActive
+        self.isUserCreated = isUserCreated
         self.createdAt = .now
         self.updatedAt = .now
         self.isCleared = false

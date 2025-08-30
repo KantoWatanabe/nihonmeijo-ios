@@ -63,12 +63,12 @@ struct CastleVisitListView: View {
                                 }
                             }
                         } label: {
-                            Label("削除", systemImage: "trash")
+                            Image(systemName: "trash")
                         }
                         Button {
                             nav.push(.castleVisitEditor(castle, visit))
                         } label: {
-                            Label("編集", systemImage: "pencil")
+                            Image(systemName: "pencil")
                         }
                     }
                 }

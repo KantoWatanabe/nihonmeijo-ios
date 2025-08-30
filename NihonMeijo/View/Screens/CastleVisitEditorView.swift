@@ -68,7 +68,7 @@ struct CastleVisitEditorView: View {
         .navigationTitle(editing == nil ? "記録を追加" : "記録を編集")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("保存") {
+                Button {
                     Task { @MainActor in
                         await mainVM.runAsync {
                             if let e = editing {
@@ -79,6 +79,9 @@ struct CastleVisitEditorView: View {
                         }
                         dismiss()
                     }
+                }
+                label: {
+                    Image(systemName: "checkmark")
                 }
                 .disabled(text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && photoLocalId == nil)
             }

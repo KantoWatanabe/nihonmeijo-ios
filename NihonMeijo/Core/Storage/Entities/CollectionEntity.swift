@@ -15,14 +15,17 @@ final class CollectionEntity {
 
     var castles: [CastleEntity] = []
 
+    var isUserCreated: Bool = false
+
     var createdAt: Date
     var updatedAt: Date
 
-    init(id: String, title: String, iconName: String, order: Int) {
+    init(id: String, title: String, iconName: String, order: Int, isUserCreated: Bool) {
         self.id = id
         self.title = title
         self.iconName = iconName
         self.order = order
+        self.isUserCreated = isUserCreated
         self.createdAt = .now
         self.updatedAt = .now
     }

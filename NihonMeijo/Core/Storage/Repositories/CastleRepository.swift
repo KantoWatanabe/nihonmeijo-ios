@@ -52,7 +52,7 @@ final class CastleRepository {
         let e = existing ?? CastleEntity(
             id: p.id, nameJa: p.nameJa, nameKana: p.nameKana,
             address: p.address, prefecture: p.prefecture,
-            lat: p.lat, lon: p.lon, isActive: p.isActive
+            lat: p.lat, lon: p.lon, isActive: p.isActive, isUserCreated: p.isUserCreated
         )
         e.nameJa = p.nameJa
         e.nameKana = p.nameKana
@@ -61,6 +61,7 @@ final class CastleRepository {
         e.lat = p.lat
         e.lon = p.lon
         e.isActive = p.isActive
+        e.isUserCreated = p.isUserCreated
         e.collections = p.collections
         e.updatedAt = .now
 

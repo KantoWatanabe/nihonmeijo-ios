@@ -14,6 +14,7 @@ struct CastleModel: Codable, Identifiable, Hashable {
     let prefecture: PrefCode
     //let coordinate: CLLocationCoordinate2D
     let isActive: Bool
+    let isUserCreated: Bool
     
     var primaryPhotoLocalId: String?
     let isCleared: Bool

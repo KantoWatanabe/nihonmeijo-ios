@@ -22,8 +22,24 @@ struct HomeView: View {
                     }))
                 }
             }
-            .padding(16)
+
+            myCollectionButton
+
+            if vm.userCollections.isEmpty {
+                Text("あなただけの名城がここに表示されます")
+                    .font(.title2)
+                    .foregroundStyle(.secondary)
+            } else {
+                LazyVGrid(columns: columns, spacing: 16) {
+                    ForEach(vm.userCollections) { item in
+                        CastleCollectionCell(props: CastleCollectionCellProps(item: item, onTap: {
+                            nav.push(.castleList(item))
+                        }))
+                    }
+                }
+            }
         }
+        .padding(16)
         .navigationTitle("名城を見つける")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -35,13 +51,37 @@ struct HomeView: View {
         .task {
             await mainVM.runAsync {
                 try mainVM.syncIfNeededOnce()
-                vm.load()
+                try vm.load()
             }
         }
         .refreshable {
             await mainVM.runAsync {
-                vm.load()
+                try vm.load()
             }
         }
+    }
+
+    var myCollectionButton: some View {
+        Button {
+            nav.push(.userCollectionList)
+        } label: {
+            HStack {
+                Text("あなただけの名城を集めよう")
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                Spacer()
+                Image("Logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 64)
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(Color("LaunchScreenBackground"))
+            .cornerRadius(8)
+        }
+        .buttonStyle(.plain)
+        .padding(.vertical, 16)
     }
 }
