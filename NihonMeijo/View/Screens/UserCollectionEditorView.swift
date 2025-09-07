@@ -8,6 +8,7 @@ import SwiftUI
 struct UserCollectionEditorView: View {
     let editing: CollectionModel?
 
+    @EnvironmentObject var nav: Navigator
     @Environment(MainViewModel.self) private var mainVM
     @Environment(\.dismiss) private var dismiss
 
@@ -30,6 +31,10 @@ struct UserCollectionEditorView: View {
     var body: some View {
         VStack {
             titleInputArea
+            
+            if self.editing != nil {
+                castleButton
+            }
             
             Spacer()
         }
@@ -54,6 +59,8 @@ struct UserCollectionEditorView: View {
                             }
                         }
                         Button("キャンセル", role: .cancel) { }
+                    } message: {
+                        Text("コレクションに含まれるお城も削除されます。")
                     }
                 }
             }
@@ -73,7 +80,7 @@ struct UserCollectionEditorView: View {
                 label: {
                     Image(systemName: "checkmark")
                 }
-                .disabled(title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                .disabled(title.isBlank)
             }
         }
     }
@@ -98,7 +105,28 @@ struct UserCollectionEditorView: View {
                     }
                 }
             .frame(height: rowHeight)
+
+            Divider()
         }
         .padding(.horizontal, 8)
+    }
+    
+    var castleButton: some View {
+        Button {
+            if let e = editing {
+                nav.push(.userCastleList(e))
+            }
+        } label: {
+            HStack(spacing: 8) {
+                Image("Castle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 24)
+                Text("お城を管理する")
+            }
+            .frame(maxWidth: .infinity)
+        }
+        .buttonStyle(.borderedProminent)
+        .padding(.horizontal, 32)
     }
 }

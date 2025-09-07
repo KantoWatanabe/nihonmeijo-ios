@@ -14,7 +14,7 @@ struct CastleVisitCell: View {
     let props: CastleVisitCellProps
 
     private var hasText: Bool {
-        !props.item.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        !props.item.text.isBlank
     }
     private var hasPhoto: Bool {
         props.item.photoLocalId != nil

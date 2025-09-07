@@ -83,7 +83,7 @@ struct CastleVisitEditorView: View {
                 label: {
                     Image(systemName: "checkmark")
                 }
-                .disabled(text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && photoLocalId == nil)
+                .disabled(text.isBlank && photoLocalId == nil)
             }
         }
     }

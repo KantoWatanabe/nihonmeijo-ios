@@ -10,6 +10,8 @@ struct CastleVisitListView: View {
     @EnvironmentObject var nav: Navigator
     @Environment(MainViewModel.self) private var mainVM
     @State private var vm: CastleVisitListViewModel
+    @State private var showDeleteAlert = false
+    @State private var pendingDelete: CastleVisitModel?
 
     init(castle: CastleModel) {
         self.castle = castle
@@ -57,11 +59,8 @@ struct CastleVisitListView: View {
                     .contentShape(Rectangle())
                     .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                         Button(role: .destructive) {
-                            Task { @MainActor in
-                                await mainVM.runAsync {
-                                    try await vm.deleteAsync(item: visit)
-                                }
-                            }
+                            pendingDelete = visit
+                            showDeleteAlert = true
                         } label: {
                             Image(systemName: "trash")
                         }
@@ -77,6 +76,20 @@ struct CastleVisitListView: View {
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
             .padding(.horizontal, 16)
+            .alert("攻城記を削除しますか？", isPresented: $showDeleteAlert, presenting: pendingDelete) { visit in
+                Button("削除", role: .destructive) {
+                    Task { @MainActor in
+                        await mainVM.runAsync {
+                            try await vm.deleteAsync(item: visit)
+                        }
+                    }
+                }
+                Button("キャンセル", role: .cancel) {
+                    pendingDelete = nil
+                }
+            } message: { visit in
+                Text(visit.text)
+            }
         }
     }
     

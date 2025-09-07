@@ -66,9 +66,14 @@ struct HomeView: View {
             nav.push(.userCollectionList)
         } label: {
             HStack {
-                Text("あなただけの名城を集めよう")
-                    .font(.headline)
-                    .foregroundStyle(.white)
+                VStack {
+                    Text("あなただけの名城を集めよう")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                    Text("あなただけのコレクションとお城を管理できます")
+                        .font(.caption)
+                        .foregroundStyle(.white)
+                }
                 Spacer()
                 Image("Logo")
                     .resizable()

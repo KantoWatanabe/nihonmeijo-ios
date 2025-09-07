@@ -10,6 +10,9 @@ struct UserCollectionListView: View {
     @Environment(MainViewModel.self) private var mainVM
     @State private var vm: UserCollectionListViewModel
 
+    let columns = [GridItem(.flexible(), spacing: 16),
+                   GridItem(.flexible(), spacing: 16)]
+
     init() {
         _vm = State(initialValue: UserCollectionListViewModel())
     }
@@ -45,6 +48,17 @@ struct UserCollectionListView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         } else {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 16) {
+                    ForEach(vm.userCollections) { item in
+                        CastleCollectionCell(props: CastleCollectionCellProps(item: item, onTap: {
+                            nav.push(.userCollectionEditor(item))
+                        }))
+                    }
+                }
+            }
+            .padding(16)
+            /*
             List {
                 ForEach(vm.userCollections, id: \.id) { collection in
                     UserCollectionCell(props: UserCollectionCellProps(item: collection, onTap: {
@@ -55,6 +69,7 @@ struct UserCollectionListView: View {
                 .onMove(perform: moveRows)
             }
             .listStyle(.plain)
+            */
         }
     }
     

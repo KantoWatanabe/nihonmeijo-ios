@@ -11,9 +11,12 @@ import Observation
 final class UserCollectionListViewModel {
     var userCollections: [CollectionModel] = []
     private let repo: CollectionRepository
+    private let castleRepo: CastleRepository
 
     init() {
-        self.repo = CollectionRepository(context: StorageProvider.shared.context)
+        let ctx = StorageProvider.shared.context
+        self.repo = CollectionRepository(context: ctx)
+        self.castleRepo = CastleRepository(context: ctx)
     }
 
     func load() throws {
@@ -51,6 +54,10 @@ final class UserCollectionListViewModel {
     
     func delete(item: CollectionModel) throws {
         guard let collectionEntity = repo.find(by: item.id) else { return }
+        let castles = try castleRepo.fetchByCollection(collectionId: item.id)
+        for castle in castles {
+            try castleRepo.delete(castle)
+        }
         try repo.delete(collectionEntity)
         try repo.applyOrderingUserCreated(orderedIds: userCollections.filter{ $0.id != item.id }.map(\.id))
         try load()

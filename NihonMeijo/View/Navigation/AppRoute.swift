@@ -14,6 +14,8 @@ enum AppRoute: Hashable {
     case castleVisitEditor(CastleModel, CastleVisitModel?)
     case userCollectionList
     case userCollectionEditor(CollectionModel?)
+    case userCastleList(CollectionModel)
+    case userCastleEditor(CollectionModel, CastleModel?)
 }
 
 extension AppRoute {
@@ -36,6 +38,10 @@ extension AppRoute {
             UserCollectionListView()
         case .userCollectionEditor(let editing):
             UserCollectionEditorView(editing: editing)
+        case .userCastleList(let collection):
+            UserCastleListView(collection: collection)
+        case .userCastleEditor(let collection, let editing):
+            UserCastleEditorView(collection: collection, editing: editing)
         }
     }
 }
