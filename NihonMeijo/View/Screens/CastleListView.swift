@@ -25,6 +25,8 @@ struct CastleListView: View {
     @State private var searchText: String = ""
     @State private var appliedQuery: String = ""
     @State private var showProgressPopover = false
+    @State private var showSortPopover = false
+    @State private var sortOrder: SortOrder = .original
     @State private var searchCategory: SearchCategory = .all
 
     @AppStorage("castle.layout") private var layout: CastleLayout = .grid
@@ -49,11 +51,7 @@ struct CastleListView: View {
         let items: [CastleModel] = {
             let flag = onlyClearedFlag(searchCategory)
             let q = appliedQuery.trimmingCharacters(in: .whitespacesAndNewlines)
-            if q.isEmpty {
-                return vm.matchedCastles(for: "", limit: nil, onlyCleared: flag)
-            } else {
-                return vm.matchedCastles(for: q, limit: nil, onlyCleared: flag)
-            }
+            return vm.matchedCastles(for: q, limit: nil, onlyCleared: flag, sort: sortOrder)
         }()
 
         Group {
@@ -90,7 +88,10 @@ struct CastleListView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 progressButton
-                    //.padding(.trailing, -16) // ToolbarItem間の余白を詰める
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+                sortButton
+                    .padding(.trailing, -16) // ToolbarItem間の余白を詰める
             }
             ToolbarItem(placement: .topBarTrailing) {
                 castleLayoutButton
@@ -154,6 +155,46 @@ struct CastleListView: View {
             }
             .padding()
             .presentationCompactAdaptation(PresentationAdaptation.popover)
+        }
+    }
+    
+    private var sortButton: some View {
+        Button {
+            showSortPopover.toggle()
+        } label: {
+            Image(systemName: "arrow.up.arrow.down.circle")
+        }
+        .popover(isPresented: $showSortPopover) {
+            VStack(alignment: .leading, spacing: 6) {
+                ForEach(SortOrder.allCases) { s in
+                    Button {
+                        sortOrder = s
+                        showSortPopover = false
+                    } label: {
+                        HStack {
+                            Text(sortOrderLabel(s))
+                            Spacer()
+                            if s == sortOrder {
+                                Image(systemName: "checkmark")
+                            }
+                        }
+                        .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                    .padding(.vertical, 4)
+                }
+            }
+            .padding()
+            .frame(minWidth: 220)
+            .presentationCompactAdaptation(.popover)
+        }
+    }
+    private func sortOrderLabel(_ s: SortOrder) -> String {
+        switch s {
+        case .original:   return "元の並び"
+        case .ratingDesc: return "評価順"
+        case .visitedDesc: return "攻城日順"
+        case .costDesc:    return "費用順"
         }
     }
     

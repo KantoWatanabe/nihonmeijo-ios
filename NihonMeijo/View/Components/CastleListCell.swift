@@ -16,13 +16,36 @@ struct CastleListCell: View {
     var body: some View {
         Button(action: props.onTap) {
             HStack(spacing: 10) {
-                Text(props.item.nameJa)
-                    .font(.subheadline)
-                    .lineLimit(2)
-                Text(props.item.address)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(2)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(props.item.nameJa)
+                        .font(.subheadline)
+                        .lineLimit(1)
+                    
+                    Text(props.item.prefecture.rawValue)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(1)
+                }
+                
+                VStack(alignment: .leading, spacing: 2) {
+                    if let date = props.item.clearedAt {
+                        Text(date, style: .date)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    } else {
+                        Text(" ")
+                            .font(.caption)
+                    }
+                    
+                    if let cost = props.item.clearedCostYen {
+                        Text("\(cost, format: .number.grouping(.automatic)) 円")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    } else {
+                        Text(" ")
+                            .font(.caption)
+                    }
+                }
                 
                 Spacer()
                 
