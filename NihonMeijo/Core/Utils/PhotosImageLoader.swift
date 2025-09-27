@@ -24,21 +24,45 @@ struct PhotosImageLoader {
                           contentMode: PHImageContentMode = .aspectFit) async throws -> UIImage {
         try await ensureReadAuth()
 
-        let result = PHAsset.fetchAssets(withLocalIdentifiers: [localIdentifier], options: nil)
-        guard let asset = result.firstObject else { throw PhotoLibraryError.assetNotFound }
-
-        return try await withCheckedThrowingContinuation { cont in
-            let opts = PHImageRequestOptions()
-            opts.isSynchronous = false
-            opts.deliveryMode = .highQualityFormat
-            PHImageManager.default().requestImage(for: asset,
-                                                  targetSize: targetSize,
-                                                  contentMode: contentMode,
-                                                  options: opts) { image, _ in
-                if let img = image { cont.resume(returning: img) }
-                else { cont.resume(throwing: PhotoLibraryError.assetNotFound) }
+        let asset: PHAsset = try await withCheckedThrowingContinuation { cont in
+            DispatchQueue.global(qos: .userInitiated).async {
+                let result = PHAsset.fetchAssets(withLocalIdentifiers: [localIdentifier], options: nil)
+                if let a = result.firstObject {
+                    cont.resume(returning: a)
+                } else {
+                    cont.resume(throwing: PhotoLibraryError.assetNotFound)
+                }
             }
         }
+
+        return try await withTaskCancellationHandler(operation: {
+            try await withCheckedThrowingContinuation { (cont: CheckedContinuation<UIImage, Error>) in
+                var requestID: PHImageRequestID?
+                let opts = PHImageRequestOptions()
+                opts.isSynchronous = false
+                opts.deliveryMode = .highQualityFormat
+
+                requestID = PHImageManager.default().requestImage(
+                    for: asset,
+                    targetSize: targetSize,
+                    contentMode: contentMode,
+                    options: opts
+                ) { image, _ in
+                    if Task.isCancelled {
+                        if let id = requestID {
+                            PHImageManager.default().cancelImageRequest(id)
+                        }
+                        return
+                    }
+                    if let img = image {
+                        cont.resume(returning: img)
+                    } else {
+                        cont.resume(throwing: PhotoLibraryError.assetNotFound)
+                    }
+                }
+            }
+        }, onCancel: {
+        })
     }
 
     /// 撮影した UIImage をフォトライブラリに保存し、その localIdentifier を返す

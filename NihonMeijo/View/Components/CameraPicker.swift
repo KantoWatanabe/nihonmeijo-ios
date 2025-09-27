@@ -4,7 +4,7 @@
 //
 
 import SwiftUI
-import UIKit
+import PhotosUI
 
 struct CameraPicker: UIViewControllerRepresentable {
     @Environment(\.dismiss) private var dismiss
@@ -24,6 +24,7 @@ struct CameraPicker: UIViewControllerRepresentable {
     final class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
         let dismiss: DismissAction
         let onPicked: (String) -> Void
+        private var saveTask: Task<Void, Never>?
 
         init(dismiss: DismissAction, onPicked: @escaping (String) -> Void) {
             self.dismiss = dismiss
@@ -34,16 +35,22 @@ struct CameraPicker: UIViewControllerRepresentable {
                                    didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             defer { dismiss() }
             if let img = info[.originalImage] as? UIImage {
-                Task {
-                    // 撮影画像をライブラリへ保存し localIdentifier を得る
-                    if let localId = try? await PhotosImageLoader.saveToLibraryAndReturnLocalId(image: img) {
+                saveTask?.cancel()
+
+                saveTask = Task {
+                    do {
+                        let localId = try await PhotosImageLoader.saveToLibraryAndReturnLocalId(image: img)
+                        if Task.isCancelled { return }
                         onPicked(localId)
+                    } catch {
+                        print("❌ Failed to save image to library: \(error)")
                     }
                 }
             }
         }
 
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            saveTask?.cancel()
             dismiss()
         }
     }

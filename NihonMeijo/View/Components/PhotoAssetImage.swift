@@ -18,10 +18,12 @@ struct PhotoAssetImage: View {
     var scaleMode: PhotoScaleMode = .fill
     var enableFullscreen: Bool = false
 
+    @Environment(\.scenePhase) private var scenePhase
     @State private var image: UIImage?
     @State private var failed = false
     @State private var showOverlay = false
     @State private var isZoomed = false
+    @State private var loadTask: Task<Void, Never>?
 
     var body: some View {
         Group {
@@ -41,16 +43,15 @@ struct PhotoAssetImage: View {
             }
         }
         .task(id: localIdentifier) {
-            do {
-                try await PhotosImageLoader.ensureReadAuth()
-                image = try await PhotosImageLoader.loadImage(
-                    localIdentifier: localIdentifier,
-                    targetSize: targetSize,
-                    contentMode: phContentMode
-                )
-            } catch {
-                failed = true
+            startLoading()
+        }
+        .onChange(of: scenePhase) { _, newPhase in
+            if newPhase == .background {
+                loadTask?.cancel()
             }
+        }
+        .onDisappear {
+            loadTask?.cancel()
         }
         .fullScreenCover(isPresented: $showOverlay) {
             if let img = image {
@@ -75,6 +76,28 @@ struct PhotoAssetImage: View {
                             }
                         }
                 )
+            }
+        }
+    }
+
+    private func startLoading() {
+        failed = false
+        image = nil
+        loadTask?.cancel()
+
+        loadTask = Task {
+            do {
+                try await PhotosImageLoader.ensureReadAuth()
+                let img = try await PhotosImageLoader.loadImage(
+                    localIdentifier: localIdentifier,
+                    targetSize: targetSize,
+                    contentMode: phContentMode
+                )
+                if Task.isCancelled { return }
+                image = img
+            } catch {
+                if Task.isCancelled { return }
+                failed = true
             }
         }
     }
